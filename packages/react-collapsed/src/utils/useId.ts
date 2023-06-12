@@ -1,7 +1,6 @@
 import * as React from 'react'
 
-const __useId: () => string | undefined =
-  (React as any)['useId'.toString()] || (() => undefined)
+const __useId: () => string | undefined = (() => undefined)
 
 export function useReactId() {
   const id = __useId()
